@@ -37,7 +37,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Step 3 Execute collection
-        run: newman run ./desafioAutomacao.postman_collection -e ./Cloud.postman_environment.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html || true
+        run: newman run ./desafioAutomacao.postman_collection.json -e ./Cloud.postman_environment.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html || true
 
       # Runs a set of commands using the runners shell
       - name: Step 4 Archive production artifacts
